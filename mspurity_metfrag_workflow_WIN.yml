@@ -1,0 +1,12 @@
+
+name: env_metfrag_workflow_win
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.10
+  - beamspy=1.2.0
+  - rdkit=2024.03.3
+  - openpyxl=3.0.9
+  - pandas
+  - numpy
