@@ -1,0 +1,23 @@
+# conda env create --name env_metfrag_workflow --file=metfrag_workflow.yml
+name:
+  - env_metfrag_workflow_unix
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.10
+  - beamspy=1.2.0
+  - rdkit=2024.03.3
+  - openpyxl=3.0.9
+  - pandas
+  - numpy
+  - bioconductor-xcms
+  - bioconductor-msPurity
+  - bioconductor-biocparallel
+  - r-openxlsx
+  - r-ggplot2
+  - r-dplyr
+  - r-tidyr
+  - metfrag
+  
+  
