@@ -1,0 +1,5 @@
+
+
+java -jar MetFragCommandLine-2.5.0.jar config_HILIC_POS_3384_1_Muthu.txt
+
+java -jar MetFragCommandLine-2.5.0.jar config_HILIC_POS_3384_2_Muthu.txt

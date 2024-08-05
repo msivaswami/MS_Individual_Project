@@ -1,0 +1,50 @@
+# https://github.com/phnmnl/container-metfrag-vis
+
+# Muthu
+
+#
+# Data file containing mz intensity peak pairs (one per line)
+#
+PeakListPath = C:\\Users\\Muthu\\Desktop\\Masters Project\\FROM_RALF\\tools-workflows\\run-mspurity-metfrag\\results\\metfrag\\MSMS_matched_HILIC_POS_3384_1.msp
+
+#
+# Database parameters -> how to retrieve candidates
+#
+MetFragDatabaseType = LocalCSV
+LocalDatabasePath = C:\\Users\\Muthu\\Desktop\\Masters Project\\FROM_RALF\\tools-workflows\\run-mspurity-metfrag\\results\\metfrag\\lib_HILIC_POS_3384_1.csv
+
+NeutralPrecursorMolecularFormula = C6H6N2O2
+# NeutralPrecursorMass = [NeutralPrecursorMass]
+IonizedPrecursorMass = 156.077072143555
+
+#
+# Peak matching parameters
+#
+FragmentPeakMatchAbsoluteMassDeviation = 0.001
+FragmentPeakMatchRelativeMassDeviation = 5
+PrecursorIonMode = 18
+IsPositiveIonMode = True
+
+#
+# Scoring parameters
+#
+MetFragScoreTypes = FragmenterScore
+MetFragScoreWeights = 1.0
+
+#
+# Output
+# SDF, XLS, CSV, ExtendedXLS, ExtendedFragmentsXLS
+#
+MetFragCandidateFragmentWriter = SDF
+# MetFragCandidateWriterFile = C:\\Users\\Muthu\\Desktop\\Masters Project\\FROM_RALF\\tools-workflows\\run-mspurity-metfrag\\results\\new_metfrag\\output_1.sdf
+
+SampleName = HILIC_POS_3384_1
+ResultsPath = C:\\Users\\Muthu\\Desktop\\Masters Project\\FROM_RALF\\tools-workflows\\run-mspurity-metfrag\\results\\new_metfrag
+
+#
+# Following parameters can be kept as they are
+#
+MaximumTreeDepth = 2
+MetFragPreProcessingCandidateFilter = UnconnectedCompoundFilter
+MetFragPostProcessingCandidateFilter = InChIKeyFilter
+# NumberThreads = 1
